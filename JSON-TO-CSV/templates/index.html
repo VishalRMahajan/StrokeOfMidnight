@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON to CSV Converter</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gradient-to-bl from-indigo-900 via-indigo-400 to-indigo-900 flex items-center justify-center h-screen">
+    <div
+        class="bg-white bg-opacity-25 shadow-md rounded-xl px-8 pt-6 pb-8 mb-4 flex flex-col backdrop-filter backdrop-blur-lg">
+        <div class="container mx-auto">
+            <h1 class="text-5xl text-center my-8 font-bold">JSON TO CSV</h1>
+            {% if error %}
+            <p class="text-red-500 text-xs italic">{{ error }}</p>
+            {% endif %}
+
+            <form action="/convert" method="post" enctype="multipart/form-data">
+                <div class="mb-6">
+                    <div class="flex items-center justify-center w-full">
+                        <label for="dropzone-file"
+                            class="flex flex-col items-center justify-center w-full h-64 border-2 border-black rounded-xl cursor-pointer bg-opacity-25  text-black">
+                            <div class="flex flex-col items-center justify-center pt-5 pb-6">
+                                <svg class="w-8 h-8 mb-4 text-black" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 16">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M13 13h3a3 3 0 0 0 0-6h-.025A5.56 5.56 0 0 0 16 6.5 5.5 5.5 0 0 0 5.207 5.021C5.137 5.017 5.071 5 5 5a4 4 0 0 0 0 8h2.167M10 15V6m0 0L8 8m2-2 2 2" />
+                                </svg>
+                                <p class="mb-2 text-sm"><span class="font-semibold">Click to upload</span> or drag and
+                                    drop</p>
+                                <p class="text-xs">JSON only</p>
+                            </div>
+                            <input id="dropzone-file" type="file" class="hidden" name="file" accept=".json" required />
+                        </label>
+                    </div>
+                </div>
+                <div class="flex justify-center items-center">
+                    <button
+                        class="bg-black hover:bg-indigo-900 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                        type="submit">
+                        Convert
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
