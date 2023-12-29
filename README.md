@@ -20,6 +20,6 @@ If you have any suggestions, improvements, or if you'd like to collaborate on a 
 
 ## License
 
-This repository is open-source and available under the 📜 [MIT License](LICENSE.md). Feel free to fork, modify, and use the code as you see fit.
+This repository is open-source and available under the 📜 [MIT License](LICENSE). Feel free to fork, modify, and use the code as you see fit.
 
 Thank you for visiting, and enjoy exploring the diverse world of my side projects! 🌌
