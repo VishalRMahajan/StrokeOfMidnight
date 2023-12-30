@@ -32,10 +32,14 @@ This Flask application provides a web interface for converting JSON files to CSV
 
 3. Use the web interface to upload a JSON file, trigger the conversion, and download the resulting CSV file.
 
+## Screenshots
+
+![App Screenshot](./Screenshot.png)
+
 ## Contributing
 
 Contributions are welcome! If you have any suggestions, improvements, or bug fixes, please open an issue or submit a pull request.
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE.md).
+This project is licensed under the [MIT License](https://github.com/VishalRMahajan/StrokeOfMidnight/blob/main/LICENSE).
