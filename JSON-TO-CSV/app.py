@@ -8,7 +8,7 @@ from io import StringIO
 
 app = Flask(__name__)
 
-UPLOAD_FOLDER = '/tmp'
+UPLOAD_FOLDER = 'uploads' # '/tmp' when deploying on vercel
 ALLOWED_EXTENSIONS = {'json'}
 
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
@@ -44,7 +44,7 @@ def convert():
             csv_file.write(csv_data)
 
         def delete_file():
-            time.sleep(30)  # wait for 5 seconds
+            time.sleep(30)
             os.remove(csv_filepath)
 
         threading.Thread(target=delete_file).start()
