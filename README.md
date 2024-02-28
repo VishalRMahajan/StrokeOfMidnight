@@ -9,6 +9,7 @@ This repository serves as a centralized hub for a variety of side projects I've 
 ## Projects Showcase
 
 - [JSON-TO-CSV](https://github.com/VishalRMahajan/StrokeOfMidnight/tree/main/JSON-TO-CSV)
+- [QR](https://github.com/VishalRMahajan/StrokeOfMidnight/tree/main/QR)
 
 
 ## How to Navigate
